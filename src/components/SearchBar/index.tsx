@@ -1,12 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import useShortenLink from '../../hooks/useShortenLink';
-import LinksList, { LinkT } from '../LinksList';
-
-const test: LinkT[] = [
-  { link: 'test link', shortenLink: 'shorten linkl' },
-  { link: 'test link', shortenLink: 'shorten linkl' },
-  { link: 'test link', shortenLink: 'shorten linkl' }
-];
+import LinksList from '../LinksList';
 
 function SearchBar() {
   const [input, setInput] = useState('');
